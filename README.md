@@ -1,1 +1,1 @@
-# Qq-Login-Sdk
+# 	PHP版-第三方QQ登录SDK
