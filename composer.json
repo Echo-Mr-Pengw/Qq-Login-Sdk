@@ -1,0 +1,11 @@
+{
+    "name": "pengw/qq-login-sdk",
+    "description": "Third party QQ login for PHP",
+    "authors": [
+        {
+            "name": "pengw",
+            "email": "2943927631@qq.com"
+        }
+    ],
+    "require": {}
+}
