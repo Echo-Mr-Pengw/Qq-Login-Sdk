@@ -52,7 +52,7 @@ class QqLoginSdk {
 	 * @param string $authCode    [Authorization Code]
 	 * @param [type] $redirectUrl [成功授权后的回调地址]
 	 */
-	public function __construct(string $appId, string $appKey, sring $authCode, string $redirectUrl) {
+	public function __construct(string $appId, string $appKey, string $authCode, string $redirectUrl) {
 
 		if(empty($appId)) {
 			self::error(1001);
@@ -92,16 +92,13 @@ class QqLoginSdk {
 
 		$reqData = [
 			'grant_type'    => 'authorization_code',
-			'client_id'     => $this->appKey,
-			'client_secret' => $this->appSecret,
+			'client_id'     => $this->appId,
+			'client_secret' => $this->appKey,
 			'code'          => $this->authCode,
 			'redirect_uri'  => $this->redirectUrl,
 		];
 
 		$ret = self::get(self::ACCESS_TOKE_URL, $reqData);
-		if(!is_array($ret)) {
-			self::error(1001, $ret);
-		}
 		parse_str($ret, $parseData);
 		if(empty($parseData['access_token'])) {
 			self::error(1006);

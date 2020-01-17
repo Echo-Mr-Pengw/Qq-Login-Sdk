@@ -4,11 +4,13 @@
     "type": "project",
     "license": "mit",
     "authors": [
-        {
-            "name": "pengw",
-            "email": "2943927631@qq.com"
-        }
-    ],
+    {
+        "name": "pengw",
+        "email": "2943927631@qq.com"
+    }],
     "minimum-stability": "dev",
-    "require": {}
+    "require":
+    {
+        "pengw/qq-login-sdk": "dev-master"
+    }
 }
