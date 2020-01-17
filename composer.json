@@ -1,6 +1,6 @@
 {
     "name": "pengw/qq-login-sdk",
-    "description": "Third party QQ login for PHP",
+    "description": "QQ Login SDK",
     "type": "project",
     "license": "mit",
     "authors": [
