@@ -1,8 +1,8 @@
 {
     "name": "pengw/qq-login-sdk",
     "description": "QQ Login SDK",
-    "type": "project",
-    "license": "mit",
+    "type": "library",
+    "license": "MIT",
     "authors": [
     {
         "name": "pengw",
